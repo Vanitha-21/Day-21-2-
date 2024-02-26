@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .app {
+    height: 100%;
+    width: 100%; /* height and width are necessary bc we will give our modal a top, bottom, right and left coordinates */
+    background-image: url('https://4.bp.blogspot.com/-0_vi0R1JBtk/UkuUedgG8GI/AAAAAAAADo4/muvR1jstAAA/s1600/funny+backgrounds+wallpapers++13.jpg'); 
+   background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    margin: 0 0 10px 0;
+  }
+  
+  .header select {
+    font-size: 1rem;
+  }
+
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       align-items: center;
+
+  }
+
+  .flexRow {
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  .modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.8s;
+
+  }
+
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+
+  }
+
+  .modal img {
+    max-height: 80vh;
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* this allows the image to be as big as it can be but containing it inside its parents limits */
+
+  }
+
+
+  button {
+    font: 300;
+    text-align: center;
+    width: 200px;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.6);
+    
+  }
+
+
